@@ -1,0 +1,16 @@
+{
+  "generator-videojs-plugin": {
+    "scope": "",
+    "name": "deep-movie-controllbar",
+    "description": "includes custom seekbar, resolution switcher",
+    "author": "rustmn",
+    "license": "mit",
+    "pluginType": "advanced",
+    "css": true,
+    "docs": false,
+    "lang": false,
+    "library": true,
+    "precommit": false,
+    "prepush": false
+  }
+}

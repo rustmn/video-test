@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>videojs-deep-movie-controlbar Demo</title>
+  <link href="node_modules/video.js/dist/video-js.css" rel="stylesheet">
+  <link href="dist/videojs-deep-movie-controlbar.css" rel="stylesheet">
+</head>
+<body>
+  <video id="videojs-deep-movie-controlbar-player" class="video-js vjs-default-skin" controls>
+    <source src="https://d2ez8akk35wez5.cloudfront.net/videos_reborn/40/INTRO_2D_3D_4k.m3u8"
+    type='application/x-mpegURL'>
+  </video>
+  <ul>
+    <li><a href="/test/debug.html">Run unit tests in browser.</a></li>
+    
+  </ul>
+  <script src="node_modules/video.js/dist/video.js"></script>
+  <script src="dist/videojs-deep-movie-controlbar.js"></script>
+  <script>
+    (function(window, videojs) {
+      const url = 'https://d2ez8akk35wez5.cloudfront.net/videos_reborn/40/INTRO_2D_3D_4k.m3u8';
+
+      var examplePlayer = window.examplePlayer = videojs('videojs-deep-movie-controlbar-player');
+      var deepMovieControlbar = window.deepMovieControlbar = examplePlayer.deepMovieControlbar();
+    }(window, window.videojs));
+  </script>
+</body>
+</html>
